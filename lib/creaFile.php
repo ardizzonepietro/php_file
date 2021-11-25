@@ -6,9 +6,9 @@ if(file_exists($path."/".$file)){
         echo "</br>file creato in: ".$path."/".$file;
         $handler = fopen($path."/".$file, 'w');
        if( fwrite($handler, $testo)){
-           echo "scritto: ".$testo;
+           echo "</br>scritto: ".$testo;
        }else{
-           echo "impossibile scrivere: ".$testo;
+           echo "</br>impossibile scrivere: ".$testo;
        }
     }
 
